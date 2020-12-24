@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+}
+
+.form-contact{
+    flex:1;
+    border: 2px solid gray;
+    overflow: scroll;
+    margin: 10px;
+}
+
+.ul-contact{
+    list-style-type: none;
+    margin: 3px;
+    padding: 0px;
+}
+
+.item-contact{
+    height: 40px;
+    width: 250px;
+    border: 1px solid gray;
+    margin-bottom: 3px;
+}
+
+.form-chat-detail{
+    flex: 4;
+    border: 2px solid gray;
+    overflow: scroll;
+}

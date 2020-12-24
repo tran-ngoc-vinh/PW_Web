@@ -1,0 +1,42 @@
+
+.form-login{
+    min-height: 100px;
+    width: 400px;
+    margin: 30px auto 0px auto;
+    background-color: rgb(209, 243, 243);
+    padding: 25px 50px;
+    font-size: 18px;
+}
+
+.row-form{
+    padding: 8px 0px;
+    display: flex;
+}
+
+.head-logo{
+    margin: 10px auto 20px auto !important;
+}
+
+
+.lable-row{
+    width: 100px;
+}
+
+.input-row{
+    flex:1;
+}
+
+.foot{
+    display: flex;
+    margin-top: 20px;
+}
+.btn-login{
+    margin: auto;
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    border: cornflowerblue;
+    border-radius: 3px;
+}

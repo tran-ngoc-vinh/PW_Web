@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+    <title>Angular JS Model</title>
+    <meta charset='utf8' />
+</head>
+
+<body ng-controller="globalCL">
+    <!-- Show data -->
+    <div>
+        <table>
+            <tr>
+                <th>Mã</th>
+                <th>Tên quốc gia</th>
+            </tr>
+            <tr ng-repeat="item in data">
+                <td>{{item.id}}</td>
+                <td>{{item.Country}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="angular.min.js"></script>
+<script>
+var myApp = angular.module('MyApp', []);
+var scope;
+myApp.controller('globalCL', ['$scope', '$http', function($scope, $http) {
+
+    $scope.data = [];
+
+    function loadData() {
+        $http.get("https://api.jsonbin.io/b/5ddf9af8264e8f39a7bd89dd", {})
+            .then(function(response) {
+                $scope.data = response.data;
+                console.log("Thành công");
+
+            })
+            .catch(function(data) {
+                console.log("Lỗi");
+            });
+    }
+    loadData();
+
+    scope = $scope;
+}]);
+</script>
+
+</html>
