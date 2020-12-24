@@ -14,7 +14,7 @@ $db = new Database();
   <title>contract </title>
 
   <!-- Bootstrap core CSS -->
-  <link href="./Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="./Public/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <!--external css-->
   <!-- Custom styles for this template -->
   <link href="./Public/css/frontend/manage.css" rel="stylesheet">
@@ -94,15 +94,20 @@ $db = new Database();
         <hr>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-            <div class="project-wrapper">
-              <div class="project">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <a class="fancybox" href="./Public/img/img_sit-cat_kv.jpg"><img class="img-responsive" src="./Public/img/img_sit-cat_kv.jpg" alt=""></a>
-                  </div>
-                  <div class="overlay"></div>
+          <form action="" class="form-photohome-data" method="POST">
+                  <div class="file-photohome">
+                    <?php echo("<pre>"); print_r($posts); echo("</pre>"); ?>
+                  </div> 
+            </form>
+            <form action="" class="form-contract-posts" method="POST">
+                 <?php foreach($data as $item) : ?>
+                <div> 
+                    <p><?php echo $item['FileName'] ?></p>
+                    <!-- <img src="<?php echo $item['FileName'] ?>">  -->
                 </div>
-              </div>
+                <?php endforeach; ?>
+               </form>
+              
             </div>
           </div>
           

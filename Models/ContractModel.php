@@ -1,6 +1,5 @@
 <?php
     class ContractModel extends BaseModel{
-        CONST X_TOKEN = 'zwFr3IxNyMoJFz8zAnaFgtYVJHfE3qfT';
 
         public function getAll()
         {
@@ -34,7 +33,7 @@
         {
             
             $headers = [
-                "Authorization: Bearer c3v84z7lEjbG6G1FKc7OXsqjLNSVKsXu"
+                "Authorization: Bearer dYlkZOixVZNr00z7cknAVgETKgTLtof3"
             ];
             
             $curl = curl_init( 'https://api.box.com/2.0/folders/128140677013?s=nplent87e2zq3d5pvats7opbs62fa8ah' );
@@ -56,7 +55,7 @@
         {
             
             $headers = [
-                "Authorization: Bearer c3v84z7lEjbG6G1FKc7OXsqjLNSVKsXu"
+                "Authorization: Bearer dYlkZOixVZNr00z7cknAVgETKgTLtof3"
             ];
             
             $curl = curl_init( 'https://api.box.com/2.0/files/756788264118?s=y3i0siu3tewiv3ky9fb5pseapaf6uwv5' );
@@ -73,10 +72,6 @@
             return $result;
 
         }
-
-        
-
-
 }    
 
 ?>

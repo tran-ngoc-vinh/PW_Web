@@ -8,7 +8,7 @@
             $post=$contractModel->getfileContract();
             
            
-            require_once('./Views/frontend/weblogin/PostViewContract.php');
+            require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
              
               $postView= new PostViewContract();
               $postView->showAllContract($data,$posts,$post);

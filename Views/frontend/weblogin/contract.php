@@ -19,6 +19,9 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
 </script>
+<script
+    src="./Public/js/React.js">
+</script>
   
 </head>
 
@@ -109,8 +112,7 @@
                 </div>
                 <?php endforeach; ?>
                </form>
-               <iframe src="<?php echo("<pre>"); print_r($post); echo("</pre>"); ?>" width="800px" height="650px" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
-               
+               <div class ="openwith"></div>
             
           </div>
         </div>
