@@ -1,5 +1,7 @@
 <?php
     class HomePhotoModel extends BaseModel{
+        CONST As_TOKEN = 'dfvrjAIqKhgpNOtp61BcFjMuGOYntQqR';
+
         public function getAll()
         {
     
@@ -32,7 +34,7 @@
         {
             
             $headers = [
-                "Authorization: Bearer c3v84z7lEjbG6G1FKc7OXsqjLNSVKsXu"
+                'Authorization: Bearer '.self::As_TOKEN
             ];
             
             $curl = curl_init( 'https://api.box.com/2.0/folders/128140337585?s=iuc27fa847b42ehwcjshlkbxtqy5bzan' );
@@ -54,7 +56,7 @@
         {
             
             $headers = [
-                "Authorization: Bearer c3v84z7lEjbG6G1FKc7OXsqjLNSVKsXu"
+                'Authorization: Bearer '.self::As_TOKEN
             ];
             
             $curl = curl_init( 'https://api.box.com/2.0/files/754477704192' );

@@ -19,9 +19,15 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
 </script>
-<script
-    src="./Public/js/React.js">
-</script>
+<script src="https://cdn01.boxcdn.net/platform/preview/2.57.0/en-US/preview.js"></script>
+<link href =" https://cdn01.boxcdn.net/platform/preview/2.57.0/en-US/preview.css">
+<script src="./Public/js/load.js"></script>
+
+
+<link href="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.css" rel="stylesheet" type="text/css"></link>
+<script src="https://cdn01.boxcdn.net/polyfills/core-js/2.5.3/core.min.js"></script>
+<script src="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.js"></script>
+
   
 </head>
 
@@ -98,12 +104,12 @@
         <h3><i class="fa fa-angle-right"></i>Hop dong file pdf</h3>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-           
+<!--            
             <form action="" class="form-contract-data" method="POST">
                   <div class="file-contract">
                     <?php echo("<pre>"); print_r($post); echo("</pre>"); ?>
                   </div> 
-            </form>
+            </form> -->
             <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
@@ -112,12 +118,32 @@
                 </div>
                 <?php endforeach; ?>
                </form>
-               <div class ="openwith"></div>
-            
+              
           </div>
+          <div class="preview-container"></div>
         </div>
   </section>
 
   
 </body>
 </html>
+<script> 
+
+const { Preview } = Box;
+const preview = new Preview();
+
+var configData = {
+
+    ACCESS_TOKEN: "GzKxn6IbnaP2HBEDN98TRsR7nScqrZQ8",
+    FILE_ID: '128140677013?s=nplent87e2zq3d5pvats7opbs62fa8ah',
+    FILE_ID_TEXT: '',
+    FILE_ID_DOC: ''
+}
+var preview = new Box.Preview();
+preview.show(configData.FILE_ID, configData.ACCESS_TOKEN, {
+    container: '.preview-container',
+    showDownload: true,
+    // Comment out the following if you are using your own access token and file ID
+    collection: [configData.FILE_ID]
+});
+</script>

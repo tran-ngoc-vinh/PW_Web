@@ -14,6 +14,6 @@
               $postView->showAllContract($data,$posts,$post);
 
         }
-  
+        
     }
 ?>
