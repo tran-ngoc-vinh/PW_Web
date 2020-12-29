@@ -1,6 +1,6 @@
 <?php
     class ContractModel extends BaseModel{
-        CONST As_TOKEN = 'GzKxn6IbnaP2HBEDN98TRsR7nScqrZQ8';
+        CONST As_TOKEN = '7kTdq6W3U75JaLLKWInOaiqo4kQrvXxX';
 
         public function getAll()
         {
@@ -8,45 +8,19 @@
             return;
             
         }
-        // public function contract($ct)
-        // {
-        //      $sql = "SELECT *
-        //              FROM occation AS a 
-        //              LEFT OUTER JOIN occationfile AS b ON a.OccationID=b.OccationID 
-        //              LEFT OUTER JOIN weblogin AS c ON c.WebLoginID=a.WebLoginID
-        //              WHERE c.WebLoginID=:WebLoginID AND OccationVisible= 1";    
-
-        //     $pre = $this->conn->prepare($sql);
-
-        //     $pre->bindValue(":WebLoginID",$ct,PDO::PARAM_STR);
-        //     $r = $pre->execute();
-           
-        //     if((true !== $r) || (1 != $pre->rowCount())){
-        //         echo('システムに誤りがある');
-        //         exit();
-        //     }else{
-        //         $data = $pre->fetchAll(PDO::FETCH_ASSOC);               
-        //         return $data;
-                
-        //     }
-            
-             
-        // }
-
-        public function contract()
+        public function contract($ct)
         {
              $sql = "SELECT *
                      FROM occation AS a 
                      LEFT OUTER JOIN occationfile AS b ON a.OccationID=b.OccationID 
                      LEFT OUTER JOIN weblogin AS c ON c.WebLoginID=a.WebLoginID
-                     WHERE b.OccationFileID=:OccationFileID AND OccationVisible= 1";    
+                     WHERE c.WebLoginID=:WebLoginID AND OccationVisible= 1";    
 
             $pre = $this->conn->prepare($sql);
 
-            $pre->bindValue(":OccationFileID",'756788264118?s=y3i0siu3tewiv3ky9fb5pseapaf6uwv5',PDO::PARAM_INT);
+            $pre->bindValue(":WebLoginID",$ct,PDO::PARAM_STR);
             $r = $pre->execute();
-           
-            if((true !== $r) || (1 != $pre->rowCount())){
+            if((true !== $r) ){
                 echo('システムに誤りがある');
                 exit();
             }else{
@@ -56,7 +30,8 @@
             }
             
              
-        }
+         }
+
         
         public function  getContract()
         {

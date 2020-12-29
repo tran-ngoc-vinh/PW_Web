@@ -23,11 +23,6 @@
 <link href =" https://cdn01.boxcdn.net/platform/preview/2.57.0/en-US/preview.css">
 <script src="./Public/js/load.js"></script>
 
-
-<link href="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.css" rel="stylesheet" type="text/css"></link>
-<script src="https://cdn01.boxcdn.net/polyfills/core-js/2.5.3/core.min.js"></script>
-<script src="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.js"></script>
-
   
 </head>
 
@@ -104,23 +99,24 @@
         <h3><i class="fa fa-angle-right"></i>Hop dong file pdf</h3>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-<!--            
-            <form action="" class="form-contract-data" method="POST">
+           
+            <!-- <form action="" class="form-contract-data" method="POST">
                   <div class="file-contract">
                     <?php echo("<pre>"); print_r($post); echo("</pre>"); ?>
                   </div> 
             </form> -->
-            <!-- <form action="" class="form-contract-posts" method="POST">
+             <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
-                    <p><?php echo $item['FileName'] ?></p>
+                <a href=""><?php echo $item['FileName'] ?></a>
+                  
                     <!-- <img src="<?php echo $item['FileName'] ?>">  -->
                 </div>
                 <?php endforeach; ?>
-               </form> -->
+               </form> 
               
           </div>
-          <div class="preview-container"></div>
+          
         </div>
   </section>
 

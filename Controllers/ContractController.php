@@ -1,9 +1,13 @@
 <?php
     class ContractController extends BaseController{
+
         public function contract(){
+            $ct = $_SESSION['loginid']?? false;
+            
+                
             require_once('./Models/ContractModel.php');
             $contractModel = new ContractModel();
-            $data=$contractModel->contract();
+            $data=$contractModel->contract($ct);
             $posts=$contractModel->getContract();
             $post=$contractModel->getfileContract();
             
@@ -14,6 +18,8 @@
               $postView->showAllContract($data,$posts,$post);
 
         }
+        
+        
         
     }
 ?>
