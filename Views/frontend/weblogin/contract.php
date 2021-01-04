@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-<html ng-app="MyApp">
 <html lang="en">
 
 <head>
@@ -19,11 +18,6 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
 </script>
-<script src="https://cdn01.boxcdn.net/platform/preview/2.57.0/en-US/preview.js"></script>
-<link href =" https://cdn01.boxcdn.net/platform/preview/2.57.0/en-US/preview.css">
-<script src="./Public/js/load.js"></script>
-
-  
 </head>
 
 <body>
@@ -108,7 +102,7 @@
              <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
-                <a href=""><?php echo $item['FileName'] ?></a>
+                <a href="?controller=Trangconcontract&action=trangconcontract"><?php echo $item['FileName'] ?></a>
                   
                     <!-- <img src="<?php echo $item['FileName'] ?>">  -->
                 </div>
@@ -119,7 +113,5 @@
           
         </div>
   </section>
-
-  
 </body>
 </html>

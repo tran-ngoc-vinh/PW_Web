@@ -15,6 +15,7 @@ session_start();
     require_once("./Controllers/CarlapaintController.php");
     require_once("./Controllers/QuotationController.php");
     require_once("./Controllers/ScheduleController.php");
+    require_once("./Controllers/TrangconcontractController.php");
 
     //get controller
     $controllerName = strtolower($_REQUEST['controller']?? 'WebLogin');

@@ -1,6 +1,6 @@
 <?php
     class ContractModel extends BaseModel{
-        CONST As_TOKEN = '7kTdq6W3U75JaLLKWInOaiqo4kQrvXxX';
+        CONST As_TOKEN = 'helaruLt2mDNY8dpml77E8Vn5ndSdtME';
 
         public function getAll()
         {
