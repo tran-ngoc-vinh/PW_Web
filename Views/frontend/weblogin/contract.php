@@ -96,7 +96,7 @@
            
             <form action="" class="form-contract-data" method="POST">
                   <div class="file-contract">
-                    <?php echo("<pre>"); print_r($post); echo("</pre>"); ?>
+                    <?php ?>
                   </div> 
             </form>
              <form action="" class="form-contract-posts" method="POST">

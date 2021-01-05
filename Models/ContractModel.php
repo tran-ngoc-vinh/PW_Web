@@ -1,6 +1,6 @@
 <?php
     class ContractModel extends BaseModel{
-        CONST As_TOKEN = 'n6tr2JuoDUoDXa8f6goNNSLw61iNwtRp';
+        CONST As_TOKEN = 'pkkNRazWwAweDsGNBbteiDva5ufJbBXS';
 
         public function getAll()
         {
@@ -33,14 +33,35 @@
          }
 
         
-        public function  getContract()
+        // public function  getfoldersContract()
+        // {
+            
+        //     $headers = [
+        //         'Authorization: Bearer'.self::As_TOKEN
+        //     ];
+
+        //     $curl = curl_init( 'https://api.box.com/2.0/folders/128140215485' );
+        //     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
+        //     curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        //     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        //     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    
+        //     $response = curl_exec($curl);
+        //     curl_close($curl);
+        //     $result = json_decode($response, true);
+
+        //     return $result;
+
+        // }
+
+        public function  getfileContract()
         {
             
             $headers = [
-                'Authorization: Bearer'.self::As_TOKEN
+                'Authorization: Bearer '.self::As_TOKEN
             ];
-
-            $curl = curl_init( 'https://api.box.com/2.0/folders/128140215485' );
+            
+            $curl = curl_init( 'https://api.box.com/2.0/files/756788264118' );
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
             curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -49,12 +70,12 @@
             $response = curl_exec($curl);
             curl_close($curl);
             $result = json_decode($response, true);
-
+             
+            
             return $result;
 
         }
-
-        public function  getfileContract()
+        public function  getfoldersContract()
         {
             
             $headers = [
