@@ -16,6 +16,7 @@ session_start();
     require_once("./Controllers/QuotationController.php");
     require_once("./Controllers/ScheduleController.php");
     require_once("./Controllers/TrangconcontractController.php");
+    require_once("./Controllers/TrangconhomephotoController.php");
 
     //get controller
     $controllerName = strtolower($_REQUEST['controller']?? 'WebLogin');

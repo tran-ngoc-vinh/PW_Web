@@ -9,7 +9,6 @@
     <script src="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.js"></script>
     <!-- <script src="./Public/js/load.js"></script> -->
     <link href="./Public/css/frontend/contract.css" rel="stylesheet" type="text/css"></link>
-
 </head>
 <body>
 <div class="preview-container"></div>
@@ -35,7 +34,7 @@
    var configData = {
 
 ACCESS_TOKEN: "VuFYqMNehfawF5dEWZoibbCub3AFEN98",
-FILE_ID: '756788264118'
+FILE_ID: '754477704192'
 
 }
 var preview = new Box.Preview();
