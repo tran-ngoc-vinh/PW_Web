@@ -10,12 +10,13 @@
             $data=$contractModel->contract($ct);
             $posts=$contractModel->getContract();
             $post=$contractModel->getfileContract();
-            
-           
-            require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
              
-              $postView= new PostViewContract();
-              $postView->showAllContract($data,$posts,$post);
+            echo("<pre>"); print_r($post); echo("</pre>"); 
+           
+            // require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
+             
+            //   $postView= new PostViewContract();
+            //   $postView->showAllContract($data,$posts,$post);
 
         }
         

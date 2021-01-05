@@ -1,4 +1,4 @@
-   // NOTE: This codepen references https://codepen.io/box-platform/pen/xBRLmP for static assets
+    // NOTE: This codepen references https://codepen.io/box-platform/pen/xBRLmP for static assets
 
    // How to use this CodePen:
    // 1. Get started with Box Platform and create an application: https://developer.box.com/docs/getting-started-box-platform
@@ -15,14 +15,15 @@
 
    var configData = {
 
-       ACCESS_TOKEN: "Hv08D04Fo0auZnayYA9xwcBPNcOIwbmw",
-       FILE_ID: '756788264118'
-
-   }
-   var preview = new Box.Preview();
-   preview.show(configData.FILE_ID, configData.ACCESS_TOKEN, {
-       container: '.preview-container',
-       showDownload: true,
-       // Comment out the following if you are using your own access token and file ID
-       collection: [configData.FILE_ID]
-   });
+    ACCESS_TOKEN: "d2u4wSJwmFwHeLQPHJdUxbaamNLyxroH",
+    FILE_ID: '756788264118',
+    FILE_ID_BOOK: '754482054103'
+    
+    }
+    var preview = new Box.Preview();
+    preview.show(configData.FILE_ID, configData.ACCESS_TOKEN, {
+    container: '.preview-container',
+    showDownload: true,
+    // Comment out the following if you are using your own access token and file ID
+    collection: [configData.FILE_ID,configData. FILE_ID_BOOK]
+    });

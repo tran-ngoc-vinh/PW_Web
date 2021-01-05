@@ -94,11 +94,11 @@
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
            
-            <!-- <form action="" class="form-contract-data" method="POST">
+            <form action="" class="form-contract-data" method="POST">
                   <div class="file-contract">
                     <?php echo("<pre>"); print_r($post); echo("</pre>"); ?>
                   </div> 
-            </form> -->
+            </form>
              <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
