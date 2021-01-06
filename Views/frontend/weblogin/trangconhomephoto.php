@@ -9,7 +9,12 @@
     <script src="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.js"></script>
     <!-- <script src="./Public/js/load.js"></script> -->
     <link href="./Public/css/frontend/contract.css" rel="stylesheet" type="text/css"></link>
-
+    <style>.preview-container {
+    border: 1px solid #eee;
+    height:950px;
+    width: 100%;
+}
+</style>
     </style>
 </head>
 <body>
@@ -35,15 +40,15 @@
 
    var configData = {
 
-ACCESS_TOKEN: "d2u4wSJwmFwHeLQPHJdUxbaamNLyxroH",
-FILE_ID: '754477704192'
-
+ACCESS_TOKEN: "iDPVu76aA2UGnC3z1vLhIdNgV6Z94GBI",
+FILE_ID: '754477704192',
+FILE_IMG: '754478403612'
 }
 var preview = new Box.Preview();
 preview.show(configData.FILE_ID, configData.ACCESS_TOKEN, {
 container: '.preview-container',
 showDownload: true,
 // Comment out the following if you are using your own access token and file ID
-collection: [configData.FILE_ID]
+collection: [configData.FILE_ID,configData.FILE_IMG]
 });
 </script>

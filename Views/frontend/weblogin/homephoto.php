@@ -94,21 +94,24 @@ $db = new Database();
         <hr>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <form action="" class="form-contract-posts" method="POST">
-                 <?php foreach($data as $item) : ?>
-                <div> 
-                <a href="?controller=Trangconhomephoto&action=trangconhomephoto"><?php echo $item['FileName'] ?></a>
-                  
-                    <!-- <img src="<?php echo $item['FileName'] ?>">  -->
-                </div>
-                <?php endforeach; ?>
-               </form> 
+            <div class="file-contract">
+            <form action="" class="form-contract-data" method="POST">
+                  <?php foreach($posts['item_collection']['entries'] as $item) :?>
+                  <div>
+                  <a href="?controller=Trangconhomephoto&action=trangconhomephoto"><?php 
+                
+                     echo ('<pre>');
+                     echo $item['name'];
+                     echo $item['id'];
+                     echo ('</pre>');
+                 ?></a> 
+                  </div>
+                  <?php endforeach; ?>
+            </form>
               
             </div>
           </div>
           
-          
-
   </section>
 
   

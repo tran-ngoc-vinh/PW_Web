@@ -93,24 +93,31 @@
         <h3><i class="fa fa-angle-right"></i>契約書</h3>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-           
-            <form action="" class="form-contract-data" method="POST">
-                  <div class="file-contract">
-                    <?php ?>
-                  </div> 
+            <div class="file-contract">
+              <form action="" class="form-contract-data" method="POST">
+                  <?php foreach($posts['item_collection']['entries'] as $item) :?>
+                  <div>
+                  <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['id']);?>"><?php 
+                    echo ('<pre>');
+                    
+                    echo"{$item['name']}</br>";
+                    echo ('</pre>');
+                 ?></a>
+                  </div>
+                  <?php endforeach; ?>
             </form>
-             <form action="" class="form-contract-posts" method="POST">
+
+             <!-- <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
                 <a href="?controller=Trangconcontract&action=trangconcontract"><?php echo $item['FileName'] ?></a>
-                  
-                    <!-- <img src="<?php echo $item['FileName'] ?>">  -->
+
                 </div>
                 <?php endforeach; ?>
-               </form> 
+              </form>  -->
               
           </div>
-          
+          </div> 
         </div>
   </section>
 </body>

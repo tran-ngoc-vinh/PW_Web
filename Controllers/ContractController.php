@@ -11,26 +11,28 @@
             $posts=$contractModel->getfoldersContract();
             $post=$contractModel->getfileContract();
             
-           // echo("<pre>"); print_r($posts); echo("</pre>"); 
-           echo '<ul>';
-                foreach ($posts as $key => $author)
-                {
-                    echo '<li>';
-                    echo '' . $author['name'] . '<br/>';
-                    echo ' ' . $author['id'] . '<br/>';
+            // echo("<pre>"); print_r($posts); echo("</pre>");
+            // echo("<pre>"); print_r($post); echo("</pre>");
+            
+        //  echo("<pre>"); print_r($posts['item_collection']['entries'][1]['id']); echo("</pre>"); 
+         
+                // foreach ($posts['item_collection']['entries'] as $item )
+                // {
+                //      echo ('<pre>');
+                //      echo"{$item['name']}</br>";
+                //      echo"{$item['id']}</br>";
+                //      echo ('</pre>');
                     
-                    
-                    echo '</li>';
-                }
-                echo '</ul>';
-            // require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
+                // }
+            require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
              
-            //   $postView= new PostViewContract();
-            //   $postView->showAllContract($data,$posts,$post);
+              $postView= new PostViewContract();
+              $postView->showAllContract($data,$posts,$post);
+            // $this->view('frontend.weblogin.contract',$data,$posts,$post);
+            
 
         }
-        
-        
+
         
     }
 ?>
