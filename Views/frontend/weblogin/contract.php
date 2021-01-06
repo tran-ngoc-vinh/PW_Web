@@ -99,7 +99,7 @@
                   <div>
                   <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['id']);?>"><?php 
                     echo ('<pre>');
-                    
+                    // echo"{$item['id']}</br>";
                     echo"{$item['name']}</br>";
                     echo ('</pre>');
                  ?></a>
