@@ -4,8 +4,10 @@ class TrangconhomephotoController extends BaseController{
         $ID=$_GET['file_id'];
       //  print_r($ID);
        // $this->view('frontend.weblogin.trangconcontract',$ID);
-        require_once('./Views/frontend/weblogin/trangconcontract.php');
-         $postView->showAlltrangconhomephoto($ID);
+       require_once('./Views/frontend/weblogin/manageview/PostViewTrangcon.php');
+             
+       $postView= new PostViewTrangcon();
+       $postView->showAlltrangconhomephoto($ID);
     }
 }
 ?>

@@ -6,9 +6,10 @@ class TrangconcontractController extends BaseController{
         $ID=$_GET['file_id'];
         // print_r($ID);
     //    $this->view('frontend.weblogin.trangconcontract',$ID);
-        require_once('./Views/frontend/weblogin/trangconcontract.php');
-        
-        $postView->showAlltrangcon($ID);
+    require_once('./Views/frontend/weblogin/manageview/PostViewTrangcon.php');
+             
+    $postView= new PostViewTrangcon();
+    $postView->showAlltrangconhomephoto($ID);
     //  echo ('<pre>');
     //  print_r($_GET);
     //  echo ('</pre>');

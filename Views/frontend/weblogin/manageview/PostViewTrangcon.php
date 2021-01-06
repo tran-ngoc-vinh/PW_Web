@@ -5,6 +5,6 @@ class PostViewTrangcon{
         
     }
     public function showAlltrangconhomephoto($ID){
-        require_once('./Views/frontend/weblogin/trangconhomephoto.php');
+        require_once('./Views/frontend/weblogin/trangconcontract.php');
     }
 }
