@@ -1,6 +1,6 @@
 <?php
     class HomePhotoModel extends BaseModel{
-        CONST As_TOKEN = 'iDPVu76aA2UGnC3z1vLhIdNgV6Z94GBI';
+        
 
         public function getAll()
         {

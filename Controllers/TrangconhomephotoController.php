@@ -1,11 +1,11 @@
 <?php 
 class TrangconhomephotoController extends BaseController{
     public function trangconhomephoto(){
-        if(isset($_POST['id'])){
-            header('LOCATION: ./');
-            exit();
-        }
-        require_once('./Views/frontend/weblogin/trangconhomephoto.php');
+        $ID=$_GET['file_id'];
+      //  print_r($ID);
+       // $this->view('frontend.weblogin.trangconcontract',$ID);
+        require_once('./Views/frontend/weblogin/trangconcontract.php');
+         $postView->showAlltrangconhomephoto($ID);
     }
 }
 ?>

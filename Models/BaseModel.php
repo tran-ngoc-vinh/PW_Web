@@ -1,6 +1,7 @@
 <?php
 class BaseModel extends Database
 {
+    CONST As_TOKEN = 's3dAqzVBXBnDjPsqTjssmK8t9qRY5RhT';
     protected $conn;
     /**
      * 構築

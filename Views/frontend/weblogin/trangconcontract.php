@@ -39,8 +39,8 @@
 
    var configData = {
 
-ACCESS_TOKEN: "ignlcV9TGhlTX7DYGivWRDkWENiYOR9n",
-FILE_ID: '756788264118',
+ACCESS_TOKEN: "B7rTqmUXu6xgvlEFxhbvh9Yz8NUmgOb1",
+FILE_ID: '<?php print_r($ID)?>'
 
 
 }

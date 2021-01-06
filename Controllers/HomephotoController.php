@@ -8,9 +8,9 @@ class HomephotoController extends BaseController{
             $posts=$contractModel->getfoldersContract();
             $post=$contractModel->getfileContract();
             
-            require_once('./Views/frontend/weblogin/manageview/PostViewHomePhoto.php');
+            require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
              
-              $postView= new PostViewHomePhoto();
+              $postView= new PostViewContract();
               $postView->showAllHomePhoto($data,$posts,$post);
            
     }

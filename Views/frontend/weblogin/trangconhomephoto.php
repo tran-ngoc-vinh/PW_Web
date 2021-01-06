@@ -40,9 +40,9 @@
 
    var configData = {
 
-ACCESS_TOKEN: "iDPVu76aA2UGnC3z1vLhIdNgV6Z94GBI",
-FILE_ID: '754477704192',
-FILE_IMG: '754478403612'
+ACCESS_TOKEN: "B7rTqmUXu6xgvlEFxhbvh9Yz8NUmgOb1",
+FILE_ID: '<?php print_r($ID)?>',
+
 }
 var preview = new Box.Preview();
 preview.show(configData.FILE_ID, configData.ACCESS_TOKEN, {

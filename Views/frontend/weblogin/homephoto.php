@@ -98,11 +98,10 @@ $db = new Database();
             <form action="" class="form-contract-data" method="POST">
                   <?php foreach($posts['item_collection']['entries'] as $item) :?>
                   <div>
-                  <a href="?controller=Trangconhomephoto&action=trangconhomephoto"><?php 
+                  <a href="?controller=Trangconhomephoto&action=trangconhomephoto&file_id=<?php echo($item['id']);?>"><?php 
                 
                      echo ('<pre>');
                      echo $item['name'];
-                     echo $item['id'];
                      echo ('</pre>');
                  ?></a> 
                   </div>
