@@ -91,10 +91,11 @@
     <section id="main-content">
       <section class="wrapper site-min-height">
         <h3><i class="fa fa-angle-right"></i>契約書</h3>
+        <hr>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
             <div class="file-contract">
-              <form action="" class="form-contract-data" method="POST">
+              <!-- <form action="" class="form-contract-data" method="POST">
                   <?php foreach($posts['item_collection']['entries'] as $item) :?>
                   <div>
                   <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['id']);?>"><?php 
@@ -105,16 +106,16 @@
                  ?></a>
                   </div>
                   <?php endforeach; ?>
-            </form>
+            </form> -->
 
-             <!-- <form action="" class="form-contract-posts" method="POST">
+             <form action="" class="form-contract-posts" method="POST">
                  <?php foreach($data as $item) : ?>
                 <div> 
-                <a href="?controller=Trangconcontract&action=trangconcontract"><?php echo $item['FileName'] ?></a>
+                <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['OccationFileID']);?>"><?php echo $item['FileName'] ?></a>
 
                 </div>
                 <?php endforeach; ?>
-              </form>  -->
+              </form> 
               
           </div>
           </div> 

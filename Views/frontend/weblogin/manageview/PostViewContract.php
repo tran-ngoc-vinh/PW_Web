@@ -8,5 +8,8 @@ class PostViewContract{
     public function showAllHomePhoto($data,$posts,$post){
         require_once('./Views/frontend/weblogin/homephoto.php');
     }
+    public function showAllCarlapaint($data,$posts,$post){
+        require_once('./Views/frontend/weblogin/carlapaint.php');
+    }
 }
 ?>

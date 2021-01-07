@@ -11,7 +11,7 @@ $db = new Database();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
-  <title>contract </title>
+  <title>homephoto </title>
 
   <!-- Bootstrap core CSS -->
   <!-- <link href="./Public/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -95,7 +95,7 @@ $db = new Database();
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
             <div class="file-contract">
-            <form action="" class="form-contract-data" method="POST">
+            <!-- <form action="" class="form-contract-data" method="POST">
                   <?php foreach($posts['item_collection']['entries'] as $item) :?>
                   <div>
                   <a href="?controller=Trangconhomephoto&action=trangconhomephoto&file_id=<?php echo($item['id']);?>"><?php 
@@ -106,7 +106,15 @@ $db = new Database();
                  ?></a> 
                   </div>
                   <?php endforeach; ?>
-            </form>
+            </form> -->
+            <form action="" class="form-contract-posts" method="POST">
+                 <?php foreach($data as $item) : ?>
+                <div> 
+                <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['OccationFileID']);?>"><?php echo $item['FileName'] ?></a>
+
+                </div>
+                <?php endforeach; ?>
+              </form> 
               
             </div>
           </div>

@@ -27,9 +27,7 @@
             require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
              
               $postView= new PostViewContract();
-              $postView->showAllContract($data,$posts,$post);
-            // $this->view('frontend.weblogin.contract',$data,$posts,$post);
-            
+              $postView->showAllContract($data,$posts,$post);   
 
         }
 

@@ -9,12 +9,6 @@
     <script src="https://cdn01.boxcdn.net/platform/preview/2.34.0/en-US/preview.js"></script>
     <!-- <script src="./Public/js/load.js"></script> -->
     <link href="./Public/css/frontend/contract.css" rel="stylesheet" type="text/css"></link>
-    <style>.preview-container {
-    border: 1px solid #eee;
-    height:950px;
-    width: 100%;
-}
-</style>
 </head>
 <body>
 <div class="preview-container"></div>
@@ -39,7 +33,7 @@
 
    var configData = {
 
-ACCESS_TOKEN: "9DDXeOZkj5HG5xYK7xe6KTuwViiW8obG",
+ACCESS_TOKEN: "7FHY6XnGkvgo0lNZiJqNXe1E8tkTTMYH",
 FILE_ID: '<?php print_r($ID)?>'
 
 

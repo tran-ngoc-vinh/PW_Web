@@ -1,11 +1,18 @@
 <?php
-class CarlapaintController{
+class CarlapaintController extends BaseController{
     public function carlapaint(){
+        $ct = $_SESSION['loginid']?? false;
+
         require_once('./Models/CarlapaintModel.php');
-        $carlapaintModel = new CarlapainModel();
-        $carlapaintModel->carlapaint();
+        $contractModel = new CarlapainModel();
+        $data=$contractModel->carlapaint($ct);
+        $posts=$contractModel->getfoldersContract();
+        $post=$contractModel->getfileContract();
         
-        require_once('./Views/frontend/weblogin/carlapaint.php');
+        require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
+             
+         $postView= new PostViewContract();
+         $postView->showAllcarlapaint($data,$posts,$post);
     }
 }
 ?>

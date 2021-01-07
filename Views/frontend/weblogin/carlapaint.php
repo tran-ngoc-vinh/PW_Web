@@ -7,14 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
-  <title>contract </title>
+  <title>carlapaint </title>
 
   <!-- Bootstrap core CSS -->
-  <link href="./Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="./Public/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <!--external css-->
   <!-- Custom styles for this template -->
   <link href="./Public/css/frontend/manage.css" rel="stylesheet">
-  <link href="./Public/js/angular.min.js">
 </head>
 
 <body>
@@ -87,22 +86,35 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i>Mau Son file pdf</h3>
+        <h3><i class="fa fa-angle-right"></i>カーラペイント</h3>
         <hr>
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-            <div class="project-wrapper">
-              <div class="project">
-                <div class="photo-wrapper">
-                  <div class="photo">
-                    <a class="fancybox" href="img/portfolio/port04.jpg"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
+            <div class="file-contract">
+            <!-- <form action="" class="form-contract-data" method="POST">
+                  <?php foreach($posts['item_collection']['entries'] as $item) :?>
+                  <div>
+                  <a href="?controller=Trangconhomephoto&action=trangconhomephoto&file_id=<?php echo($item['id']);?>"><?php 
+                
+                     echo ('<pre>');
+                     echo $item['name'];
+                     echo ('</pre>');
+                 ?></a> 
                   </div>
-                  <div class="overlay"></div>
+                  <?php endforeach; ?>
+            </form> -->
+            <form action="" class="form-contract-posts" method="POST">
+                 <?php foreach($data as $item) : ?>
+                <div> 
+                <a href="?controller=Trangconcontract&action=trangconcontract&file_id=<?php echo($item['OccationFileID']);?>"><?php echo $item['FileName'] ?></a>
+
                 </div>
-              </div>
+                <?php endforeach; ?>
+              </form> 
+              
             </div>
           </div>
-
+          
   </section>
 
   

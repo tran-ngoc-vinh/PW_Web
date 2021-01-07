@@ -83,8 +83,8 @@ class WebLoginController extends BaseController {
         $lstMessage = $chatWork->getMessages('140999320',1);
 
         $data=[
-            'lstContacts'=>$lstContacts,
-            'lstMessage'=>$lstMessage
+            'a'=>$lstContacts,
+            'b'=>$lstMessage
         ];
         
         // if(isset($_POST['chat_msg']) && (true !== empty($_POST['chat_msg']))){
@@ -94,6 +94,7 @@ class WebLoginController extends BaseController {
 
         $this->view('frontend.weblogin.chat',$data);
     }
+
 
 
 
