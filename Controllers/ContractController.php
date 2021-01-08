@@ -10,8 +10,10 @@
             $data=$contractModel->contract($ct);
             $posts=$contractModel->getfoldersContract();
             $post=$contractModel->getfileContract();
+            $resettoken=$contractModel->refreshtoken();
+            // var_dump($resettoken);
             
-            // echo("<pre>"); print_r($posts); echo("</pre>");
+            echo("<pre>"); print_r($resettoken); echo("</pre>");
             // echo("<pre>"); print_r($post); echo("</pre>");
             
         //  echo("<pre>"); print_r($posts['item_collection']['entries'][1]['id']); echo("</pre>"); 

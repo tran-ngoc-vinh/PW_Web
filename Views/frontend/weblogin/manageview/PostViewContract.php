@@ -11,5 +11,8 @@ class PostViewContract{
     public function showAllCarlapaint($data,$posts,$post){
         require_once('./Views/frontend/weblogin/carlapaint.php');
     }
+    public function showAllQuotatiion($data){
+        require_once('./Views/frontend/weblogin/quotation.php');
+    }
 }
 ?>

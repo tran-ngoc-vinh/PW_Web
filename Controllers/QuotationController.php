@@ -1,11 +1,15 @@
 <?php
-class QuotationController{
+class QuotationController {
     public function quotation(){
+        $ct = $_SESSION['loginid']?? false;
         require_once('./Models/QuotationModel.php');
         $quotationModel = new QuotationModel();
-        $quotationModel -> quotation();
+        $data=$quotationModel -> quotation($ct);
 
-        require_once('./Views/frontend/weblogin/quotation.php');
+        require_once('./Views/frontend/weblogin/manageview/PostViewContract.php');
+             
+        $postView= new PostViewContract();
+        $postView->showAllQuotatiion($data);   
     }
 }
 ?>
