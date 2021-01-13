@@ -1,5 +1,5 @@
 <?php
-    class ContractController extends BaseController{
+    class ContractController extends BaseController {
 
         public function contract(){
             $ct = $_SESSION['loginid']?? false;
@@ -10,13 +10,18 @@
             $data=$contractModel->contract($ct);
             $posts=$contractModel->getfoldersContract();
             $post=$contractModel->getfileContract();
-            $resettoken=$contractModel->refreshtoken();
+
+            require_once('Models/Sample.php');
+            $sample= new Sample();
+            $access_token=$sample->boxapi();
+            // print_r($access_token);
+   
             // var_dump($resettoken);
             
-            echo("<pre>"); print_r($resettoken); echo("</pre>");
             // echo("<pre>"); print_r($post); echo("</pre>");
+            // echo("<pre>"); print_r($posts); echo("</pre>");
             
-        //  echo("<pre>"); print_r($posts['item_collection']['entries'][1]['id']); echo("</pre>"); 
+            //  echo("<pre>"); print_r($posts['item_collection']['entries'][1]['id']); echo("</pre>"); 
          
                 // foreach ($posts['item_collection']['entries'] as $item )
                 // {

@@ -33,7 +33,7 @@
 
    var configData = {
 
-ACCESS_TOKEN: "ArYFZrCIXaspON4CxVoMAiLlTnxBob0F",
+ACCESS_TOKEN: "<?php print_r($access_token)?>",
 FILE_ID: '<?php print_r($ID)?>'
 
 

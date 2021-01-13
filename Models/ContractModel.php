@@ -39,7 +39,7 @@
                 'Authorization: Bearer '.self::As_TOKEN
             ];
             
-            $curl = curl_init( 'https://api.box.com/2.0/files/756788264118' );
+            $curl = curl_init( 'https://api.box.com/2.0/files/763453464353' );
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
             curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -60,7 +60,7 @@
                 'Authorization: Bearer '.self::As_TOKEN
             ];
             
-            $curl = curl_init( 'https://api.box.com/2.0/folders/128140677013' );
+            $curl = curl_init( 'https://api.box.com/2.0/folders/0' );
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
             curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -84,8 +84,8 @@
         //     $option=[
         //         'client_id' =>'7f1kznjxox8r8u9bdfqeet19vijsgtsn',
         //         'client_secret' => '2ZLCyLtS2iaftmZsBwjrtYsrOdCJjbfa',
-        //         'code' => 'CeZpX4Fzwtpu5SRYn5R3DJTbDdtFMu5x',
-        //         'grant_type' => 'authorization_code'
+        //         'refresh_token' => '3TeBdAwLEEIDZt13i4vz5RtE08JauhvO6f11I7w5543ur9hFuMY3VDHRQr2rgLqR',
+        //         'grant_type' => 'refresh_token'
         //     ];
     
         //     $curl = curl_init( "https://api.box.com/oauth2/token" );
@@ -95,34 +95,10 @@
         //     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         //     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             
+        //     $response = curl_exec($curl);
         //     curl_close($curl);
 
         // }
-        public function refreshtoken()
-        {
-            $headers = [
-                'Content-Type: application/x-www-form-urlencoded'
-            ];
-    
-            $option=[
-                'client_id' =>'7f1kznjxox8r8u9bdfqeet19vijsgtsn',
-                'client_secret' => '2ZLCyLtS2iaftmZsBwjrtYsrOdCJjbfa',
-                'refresh_token' => 'GR6eLXtytEjbE3XPcc2r0FFRRSDmJNZjKapC8SatiWC6sO6t0YgKgBde29ahlzRj',
-                'grant_type' => 'refresh_token'
-            ];
-    
-            $curl = curl_init( "https://api.box.com/oauth2/token" );
-            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
-            curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-            curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($option));
-            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            
-            $response = curl_exec($curl);
-            var_dump($response);
-            curl_close($curl);
-
-        }
 
     }   
 
