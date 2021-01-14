@@ -1,6 +1,6 @@
 <?php
 class Database{
-    CONST DB_HOST='mysql:host=localhost;dbname=paintwall;charset=utf8';
+    CONST DB_HOST='mysql:host=localhost;dbname=paintwall1;charset=utf8';
     CONST DB_USER='root';
     CONST DB_PASS='';   
 

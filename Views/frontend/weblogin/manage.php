@@ -24,7 +24,7 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="?controller=Manage&action=manage" class="logo"><b>PANT<span>WALL</span></b></a>
+      <a href="" class="logo"><b>PANT<span>WALL</span></b></a>
       <!--logo end-->
       <div class="top-menu1">
         <ul class="nav pull-right top-menu">
@@ -49,28 +49,28 @@
           
           </li>
           <li class="sub-menu">
-            <a href="?controller=Homephoto&action=homephoto">
+            <a href="?controller=Contract&action=homephoto">
               <i class="fa fa-cogs"></i>
               <span>家写真</span>
               </a>
            
           </li>
           <li class="sub-menu">
-            <a href="?controller=Carlapaint&action=carlapaint">
+            <a href="?controller=Contract&action=carlapaint">
               <i class="fa fa-book"></i>
               <span>カーラペイント</span>
               </a>
             
           </li>
           <li class="sub-menu">
-            <a href="?controller=Quotation&action=quotation">
+            <a href="?controller=Contract&action=quotation">
               <i class="fa fa-tasks"></i>
               <span>見積書</span>
               </a>
             
           </li>
           <li class="sub-menu">
-            <a href="?controller=Schedule&action=schedule">
+            <a href="?controller=Contract&action=schedule">
               <i class="fa fa-th"></i>
               <span>工事スケジュール</span>
               </a>

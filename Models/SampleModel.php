@@ -5,8 +5,8 @@ require __DIR__ . '/../vendor/autoload.php';
 
    class Sample{
      public function boxapi(){
-       
-      $json = file_get_contents('config.json');
+      date_default_timezone_set('Asia/Tokyo');
+      $json = file_get_contents('./Public/config.json');
       $config = json_decode($json);
       
       $private_key = $config->boxAppSettings->appAuth->privateKey;
@@ -52,9 +52,7 @@ require __DIR__ . '/../vendor/autoload.php';
       // Parse the JSON and extract the access token
       $data = $response->getBody()->getContents();
       $access_token = json_decode($data)->access_token;
-    //   print_r($access_token);
-
-            return $access_token;
+           return $access_token;
 
      }
     

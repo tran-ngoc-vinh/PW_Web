@@ -53,34 +53,35 @@
           
           </li>
           <li class="sub-menu">
-            <a href="?controller=Homephoto&action=homephoto">
+            <a href="?controller=Contract&action=homephoto">
               <i class="fa fa-cogs"></i>
               <span>家写真</span>
               </a>
            
           </li>
           <li class="sub-menu">
-            <a href="?controller=Carlapaint&action=carlapaint">
+            <a href="?controller=Contract&action=carlapaint">
               <i class="fa fa-book"></i>
               <span>カーラペイント</span>
               </a>
             
           </li>
           <li class="sub-menu">
-            <a href="?controller=Quotation&action=quotation">
+            <a href="?controller=Contract&action=quotation">
               <i class="fa fa-tasks"></i>
               <span>見積書</span>
               </a>
             
           </li>
           <li class="sub-menu">
-            <a href="?controller=Schedule&action=schedule">
+            <a href="?controller=Contract&action=schedule">
               <i class="fa fa-th"></i>
               <span>工事スケジュール</span>
               </a>
           </li>
           
         </ul>
+
 
       </div>
     </aside>
@@ -90,8 +91,8 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i>契約書</h3>
-        <hr>
+        <h3><i class="fa fa-angle-right"></i></h3>
+        
         <div class="row mt">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
             <div class="file-contract">
