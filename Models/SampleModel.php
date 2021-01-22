@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
    class Sample{
      public function boxapi(){
       date_default_timezone_set('Asia/Tokyo');
-      $json = file_get_contents('./Public/config.json');
+      $json = file_get_contents('./config.json');
       $config = json_decode($json);
       
       $private_key = $config->boxAppSettings->appAuth->privateKey;
@@ -27,7 +27,7 @@ require __DIR__ . '/../vendor/autoload.php';
         'jti' => base64_encode(random_bytes(64)),
         // We give the assertion a lifetime of 45 seconds 
         // before it expires
-        'exp' => time() + 81,
+        'exp' => time() +85,
         'kid' => $config->boxAppSettings->appAuth->publicKeyID
       ];
       $assertion = JWT::encode($claims, $key, 'RS512');
